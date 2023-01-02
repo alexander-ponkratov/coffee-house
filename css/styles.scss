@@ -1,3 +1,5 @@
+$white: white;
+
 * {
     box-sizing: border-box;
 }
@@ -31,6 +33,22 @@ header {
     background: rgba(16, 24, 30, 0.4);
     font-size: 16px;
 }
+
+.subheading {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.12em;
+    color: $white
+}
+
+.h-logo {
+    justify-self: start;
+}
+
 
 @media screen and (max-width: 1440px) {
     .regular-text {
