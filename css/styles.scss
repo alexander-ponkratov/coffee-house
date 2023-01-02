@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+p {
+    margin: 0;
+}
+
+html {
+    font-size: 0.833vw;
+}
+
+body {
+    margin: 0px auto;
+}
+button {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.container {
+    margin: 0px auto;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+header {
+    height: 183px;
+    background: rgba(16, 24, 30, 0.4);
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1440px) {
+    .regular-text {
+        font-size: 10px;
+    }
+    .regular-text-2 {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .regular-text {
+        font-size: 8px;
+    }
+    .regular-text-2 {
+        font-size: 8px;
+    }
+}
