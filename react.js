@@ -1,6 +1,6 @@
 function App() {
     const Container = window.styled.div`
-        max-width: ${props => props.maxWidth};
+        max-width: ${props => props.maxW};
     `
     const GridCol = window.styled.div`
         display: ${props => props.disp};
@@ -26,7 +26,7 @@ function App() {
     `
     return (
         <header>
-            <Container className='container' maxWidth="1764px">
+            <Container className='container' maxW="1764px">
                 <GridCol disp="inline-grid" gridTemplateColumns="auto auto auto auto">
                     <Image className="h-logo" src='img/coffee-house-creative-logo-3B1F1F60F9-seeklogo 1.png'></Image>
                     <GridCol disp="inline-grid" gridTemplateColumns="auto auto auto auto auto">
