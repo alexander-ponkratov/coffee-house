@@ -34,6 +34,28 @@ header {
 .headerLine {
     padding-top: 29px;
     padding-bottom: 29px;
+
+    .headerMenu {
+        gap: 60px;
+
+        .headerA {
+            text-decoration: none;
+        }
+    }
+
+    .searchForm {
+        width: 351px;
+        height: 55px;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 60px;
+        justify-self: end;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.14em;
+    }
 }
 
 .subheading {
@@ -47,9 +69,7 @@ header {
     color: $white;
 }
 
-.headerA {
-    text-decoration: none;
-}
+
 
 h1 {
     font-family: "Montserrat";
@@ -72,12 +92,6 @@ h1 {
     object-fit: cover;
 }
 
-.sectionTwo {
-    max-width: 1015px;
-    margin-top: 148px;
-    margin-left: 250px;
-}
-
 .flexCol {
     display: flex;
     flex-direction: row;
@@ -94,48 +108,36 @@ h1 {
     justify-content: space-between;
 }
 
-.headerMenu {
-    gap: 60px;
-}
+.sectionTwo {
+    max-width: 1015px;
+    margin-top: 148px;
+    margin-left: 250px;
 
-.searchForm {
-    width: 351px;
-    height: 55px;
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 60px;
-    justify-self: end;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.14em;
-}
-
-.buttonOpen {
-    width: 434px;
-    height: 96px;
-    background: $yellow;
-    border: 3px solid $white;
-    border-radius: 31px;
-    &:hover {
-        background-color: lighten($color: $yellow, $amount: 5%);
+    .buttonOpen {
+        width: 434px;
+        height: 96px;
+        background: $yellow;
+        border: 3px solid $white;
+        border-radius: 31px;
+        &:hover {
+            background-color: lighten($color: $yellow, $amount: 5%);
+        }
+        &:active {
+            background-color: darken($color: $yellow, $amount: 5%);
+        }
     }
-    &:active {
-        background-color: darken($color: $yellow, $amount: 5%);
+    
+    .buttonOpenText {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: #ffffff;
+        text-shadow: 0 0 2px #672b18;
     }
-}
-
-.buttonOpenText {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 37px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    color: #ffffff;
-    text-shadow: 0 0 2px #672b18;
 }
 
 .aboutCoffee {
