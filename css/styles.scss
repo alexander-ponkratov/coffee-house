@@ -1,4 +1,5 @@
 $white: white;
+$yellow: #d8a36f;
 
 * {
     box-sizing: border-box;
@@ -25,8 +26,6 @@ button {
     position: relative;
 }
 
-
-
 header {
     background: rgba(16, 24, 30, 0.4);
     font-size: 16px;
@@ -45,7 +44,7 @@ header {
     line-height: 29px;
     text-align: center;
     letter-spacing: 0.12em;
-    color: $white
+    color: $white;
 }
 
 .headerA {
@@ -70,6 +69,7 @@ h1 {
     z-index: -1;
     background-position: center;
     background-size: cover;
+    object-fit: cover;
 }
 
 .sectionTwo {
@@ -84,7 +84,6 @@ h1 {
     align-items: center;
     justify-items: center;
     justify-content: space-between;
-    gap: 10px;
 }
 
 .flexRow {
@@ -93,9 +92,7 @@ h1 {
     align-items: center;
     justify-items: center;
     justify-content: space-between;
-    gap: 10px;
 }
-
 
 .headerMenu {
     gap: 60px;
@@ -107,7 +104,7 @@ h1 {
     background: rgba(255, 255, 255, 0.15);
     border-radius: 60px;
     justify-self: end;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -117,10 +114,59 @@ h1 {
 
 .buttonOpen {
     width: 434px;
-    height: 96px;        
-    background: #D8A36F;
-    border: 3px solid #FFFFFF;
+    height: 96px;
+    background: $yellow;
+    border: 3px solid $white;
     border-radius: 31px;
+    &:hover {
+        background-color: lighten($color: $yellow, $amount: 5%);
+    }
+    &:active {
+        background-color: darken($color: $yellow, $amount: 5%);
+    }
+}
+
+.buttonOpenText {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    text-shadow: 0 0 2px #672b18;
+}
+
+.aboutCoffee {
+    margin-top: 308px;
+}
+
+.sectionDesc {
+    margin-top: 200px;
+    max-width: 1688px;
+    .descLine {
+        .descLogo {
+            width: 369px;
+            height: 423px;
+        }
+        .descBlock {
+            display: flex;
+            width: 1206px;
+            height: 296px;
+            left: 650px;
+            top: 1163px;
+
+            background: $yellow;
+            border-radius: 65px;
+        }
+        .descText {
+            text-align: left;
+            align-self: center;
+            text-shadow: 0 0 2px #672b18;
+            padding-left: 20px;
+        }
+    }
 }
 
 @media screen and (max-width: 1440px) {
