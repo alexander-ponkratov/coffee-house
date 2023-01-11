@@ -1,0 +1,10 @@
+.bImage {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+  }
