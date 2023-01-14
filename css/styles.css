@@ -26,13 +26,13 @@ button {
 }
 
 header {
-  background: rgba(16, 24, 30, 0.4);
   font-size: 16px;
 }
 
 .headerLine {
   padding-top: 29px;
   padding-bottom: 29px;
+  background: rgba(16, 24, 30, 0.4);
 }
 
 .headerLine .headerMenu {
