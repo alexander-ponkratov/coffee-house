@@ -26,13 +26,21 @@ button {
 }
 
 header {
-  font-size: 16px;
+  padding-bottom: 1281px;
+  background-image: url("../img/coffee-beans-on-dark-background-top-view-coffee-concept 1.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 100%;
+}
+
+.outerContainer {
+  background: rgba(16, 24, 30, 0.4);
 }
 
 .headerLine {
   padding-top: 29px;
   padding-bottom: 29px;
-  background: rgba(16, 24, 30, 0.4);
 }
 
 .headerLine .headerMenu {
