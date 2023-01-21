@@ -91,7 +91,7 @@ body {
 }
 .header__menu {
     display: flex;
-    gap: 60px;
+    column-gap: 60px;
     flex-wrap: wrap;
 }
 .menu {
@@ -99,7 +99,7 @@ body {
 }
 @media (max-width: 992px) {
     .header__menu {
-        gap: 40px;
+        column-gap: 40px;
     }
     .menu__link {
         line-height: 100%;
@@ -107,13 +107,23 @@ body {
 }
 @media (max-width: 767px) {
     .header__menu {
-        gap: 20px;
+        column-gap: 20px;
+    }
+}
+@media (max-width: 479px) {
+    .header__menu {
+        column-gap: 5px;
     }
 }
 .menu__item {
 }
 .menu__link {
     color: $white;
+}
+@media (max-width: 479px) {
+    .menu__link {
+        font-size: 36px;
+    }
 }
 .header__formW {
 }
