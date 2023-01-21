@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  outline: 1px solid tomato;
 }
 
 p {
@@ -19,19 +20,11 @@ button {
   overflow: hidden;
 }
 
-.container {
-  max-width: 1764px;
-  margin: 0px auto;
-  position: relative;
-}
-
 header {
   padding-bottom: 1281px;
   background-image: url("../img/coffee-beans-on-dark-background-top-view-coffee-concept 1.png");
   background-position: center;
   background-size: cover;
-  width: 100%;
-  min-height: 100%;
 }
 
 .outerContainer {
@@ -39,12 +32,15 @@ header {
 }
 
 .headerLine {
-  padding-top: 29px;
-  padding-bottom: 29px;
+  display: flex;
+  align-self: center;
+  align-items: center;
 }
 
 .headerLine .headerMenu {
-  gap: 60px;
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .headerLine .headerMenu .headerA {
@@ -166,23 +162,5 @@ h1 {
   align-self: center;
   text-shadow: 0 0 2px #672b18;
   padding-left: 20px;
-}
-
-@media screen and (max-width: 1440px) {
-  .regular-text {
-    font-size: 10px;
-  }
-  .regular-text-2 {
-    font-size: 10px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .regular-text {
-    font-size: 8px;
-  }
-  .regular-text-2 {
-    font-size: 8px;
-  }
 }
 /*# sourceMappingURL=styles.css.map */
