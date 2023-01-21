@@ -1,8 +1,7 @@
 /* ------------------------------------- */
-* {
-  outline: 1px solid tomato;
-}
-
+/* * {
+    outline: 1px solid tomato;
+} */
 *,
 *::before,
 *::after {
@@ -45,6 +44,7 @@ body {
   font-family: "Montserrat";
 }
 
+/* ------------------------------------ */
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -52,7 +52,9 @@ body {
 
 ._container {
   max-width: 1764px;
+  padding: 0 15px;
   margin: 0px auto;
+  box-sizing: content-box;
 }
 
 ._row {
@@ -61,7 +63,58 @@ body {
 }
 
 /* ------------------------------------ */
+._fontSubheading {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 181.25%;
+  text-align: center;
+  letter-spacing: 0.12em;
+}
+
+/* ------------------------------------ */
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  background: rgba(16, 24, 30, 0.4);
+}
+
 .header__row {
   min-height: 183px;
+  justify-content: space-between;
+}
+
+/* ------------------------------------ */
+.header__menu {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.menu {
+  padding: 5px 0;
+}
+
+@media (max-width: 992px) {
+  .header__menu {
+    gap: 40px;
+  }
+  .menu__link {
+    line-height: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__menu {
+    gap: 20px;
+  }
+}
+
+.menu__link {
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */
