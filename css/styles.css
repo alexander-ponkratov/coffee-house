@@ -48,6 +48,8 @@ body {
 .wrapper {
   min-height: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 ._container {
@@ -128,5 +130,36 @@ body {
   .menu__link {
     font-size: 36px;
   }
+}
+
+/* -----------------------------------  */
+/* ----------------------------------- */
+.form__inputW {
+  position: relative;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 60px;
+  z-index: 10;
+}
+
+.form__input {
+  width: 351px;
+  height: 55px;
+  border: none;
+  background: url("../img/magnifyingglass.circle.png") no-repeat 95% center;
+  padding-left: 30px;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  letter-spacing: 0.14em;
+  opacity: 1;
+  /* Firefox */
 }
 /*# sourceMappingURL=styles.css.map */
