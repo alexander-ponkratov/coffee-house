@@ -1,166 +1,50 @@
 * {
-  box-sizing: border-box;
   outline: 1px solid tomato;
 }
 
-p {
+*,
+*::before,
+*::after {
+  padding: 0;
   margin: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
-html {
-  font-size: 0.833vw;
-}
-
-body {
-  margin: 0px auto;
-}
-
-button {
-  cursor: pointer;
-  overflow: hidden;
-}
-
-header {
-  padding-bottom: 1281px;
-  background-image: url("../img/coffee-beans-on-dark-background-top-view-coffee-concept 1.png");
-  background-position: center;
-  background-size: cover;
-}
-
-.outerContainer {
-  background: rgba(16, 24, 30, 0.4);
-}
-
-.headerLine {
-  display: flex;
-  align-self: center;
-  align-items: center;
-}
-
-.headerLine .headerMenu {
-  list-style: none;
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.headerLine .headerMenu .headerA {
+a {
   text-decoration: none;
 }
 
-.headerLine .searchForm {
-  width: 351px;
-  height: 55px;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 60px;
-  justify-self: end;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.14em;
+ul,
+ol,
+li {
+  list-style: none;
 }
 
-.subheading {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  text-align: center;
-  letter-spacing: 0.12em;
-  color: white;
+img {
+  vertical-align: top;
 }
 
-h1 {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 48px;
-  line-height: 59px;
-  text-align: center;
-  letter-spacing: 0.16em;
-  color: white;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
 }
 
-.flexCol {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-items: center;
-  justify-content: space-between;
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-style: 16px;
+  color: #000;
 }
 
-.flexRow {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-  justify-content: space-between;
-}
-
-.sectionTwo {
-  max-width: 1015px;
-  margin-top: 148px;
-  margin-left: 250px;
-}
-
-.sectionTwo .buttonOpen {
-  width: 434px;
-  height: 96px;
-  background: #d8a36f;
-  border: 3px solid white;
-  border-radius: 31px;
-}
-
-.sectionTwo .buttonOpen:hover {
-  background-color: #ddb083;
-}
-
-.sectionTwo .buttonOpen:active {
-  background-color: #d3965b;
-}
-
-.sectionTwo .buttonOpenText {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 37px;
-  text-align: center;
-  letter-spacing: 0.1em;
-  color: #ffffff;
-  text-shadow: 0 0 2px #672b18;
-}
-
-.aboutCoffee {
-  margin-top: 308px;
-}
-
-.sectionDesc {
-  margin-top: 200px;
-  max-width: 1688px;
-}
-
-.sectionDesc .descLine .descLogo {
-  width: 369px;
-  height: 423px;
-}
-
-.sectionDesc .descLine .descBlock {
-  display: flex;
-  width: 1206px;
-  height: 296px;
-  left: 650px;
-  top: 1163px;
-  background: #d8a36f;
-  border-radius: 65px;
-}
-
-.sectionDesc .descLine .descText {
-  text-align: left;
-  align-self: center;
-  text-shadow: 0 0 2px #672b18;
-  padding-left: 20px;
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
 }
 /*# sourceMappingURL=styles.css.map */
