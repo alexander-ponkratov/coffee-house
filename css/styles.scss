@@ -200,15 +200,24 @@ body {
     letter-spacing: 0.16em;
     color: $white;
 }
+/* ------------------------------------- */
 .block1__buttonW {
 }
 .block1__button {
     width: 434px;
     height: 96px;
-    margin: auto;
     background: #d8a36f;
     border: 3px solid #ffffff;
     border-radius: 31px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    text-shadow: 0 0 2px #672b18;
 }
 /* ------------------------------------ */
 .block1__imageW {
