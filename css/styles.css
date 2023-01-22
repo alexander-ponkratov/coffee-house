@@ -325,12 +325,24 @@ body {
 .products__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -140px -192px;
+  margin: 0px -140px -192px;
 }
 
 .products__item {
   flex: 0 1 33%;
   padding: 0 140px 192px;
+}
+
+@media (max-width: 1620px) {
+  .products__item {
+    flex: 0 1 50%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .products__item {
+    flex: 0 1 100%;
+  }
 }
 
 .products__imageW {
@@ -340,7 +352,7 @@ body {
 
 .products__textBlock {
   display: flex;
-  padding: 33px 25px 0px;
+  padding: 33px 0px 0px;
   justify-content: space-between;
 }
 
