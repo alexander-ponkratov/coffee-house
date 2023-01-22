@@ -141,7 +141,7 @@ body {
 
 @media (max-width: 479px) {
   .menu__link {
-    font-size: 36px;
+    font-size: 20px;
   }
 }
 
@@ -155,11 +155,18 @@ body {
 }
 
 .form__input {
-  width: 21.9375rem;
+  width: 351px;
   height: 55px;
   border: none;
   background: url("../img/magnifyingglass.circle.png") no-repeat 95% center;
   padding-left: 30px;
+}
+
+@media (max-width: 767px) {
+  .form__input {
+    width: 130px;
+    padding-left: 10px;
+  }
 }
 
 ::placeholder {
@@ -187,7 +194,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  row-gap: 40px;
   padding: 331px 0px 575px 0px;
   z-index: 2;
 }
@@ -201,10 +208,22 @@ body {
   color: white;
 }
 
+@media (max-width: 992px) {
+  .block1__Text {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 479px) {
+  .block1__Text {
+    font-size: 24px;
+  }
+}
+
 /* ------------------------------------- */
 .block1__button {
-  width: 434px;
-  height: 96px;
+  min-height: 96px;
+  padding: 5px 5px;
   background: #d8a36f;
   border: 3px solid #ffffff;
   border-radius: 31px;
@@ -215,10 +234,24 @@ body {
   line-height: 37px;
   text-align: center;
   letter-spacing: 0.1em;
-  color: #ffffff;
+  color: white;
   text-shadow: 0 0 2px #672b18;
 }
 
+.block1__button:hover {
+  background-color: #ddb083;
+}
+
+.block1__button:active {
+  background-color: #d3965b;
+}
+
+/* mobile first */
+/* @media (max-width:479px){
+    .block1__button {
+        flex: 1 1 100%;
+    }
+} */
 /* ------------------------------------ */
 .block1__imageW {
   position: absolute;
@@ -228,5 +261,59 @@ body {
   left: 0;
 }
 
-/* ------------------------------------- */
+.block1__imageW img {
+  object-position: right;
+}
+
+/* @media (max-width:992px){
+    .block1__imageW {
+        opacity: 0.5;
+    }
+} */
+/* ABOUT------------------------------- */
+.about__body {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  row-gap: 88px;
+  margin: -292px 0px 0px 0px;
+}
+
+.about__pText {
+  font-weight: 800;
+  text-align: center;
+  font-size: 48px;
+  line-height: 59px;
+  letter-spacing: 0.16em;
+  color: white;
+}
+
+.about__cup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 113px;
+}
+
+.cup__logo {
+  min-height: 429px;
+}
+
+.cup__rect {
+  max-width: 1206px;
+  background: #d8a36f;
+  border-radius: 65px;
+}
+
+.cup__text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.12em;
+  color: white;
+  padding: 61px 29px;
+  text-align: left;
+  text-shadow: 0 0 2px #672b18;
+}
 /*# sourceMappingURL=styles.css.map */
