@@ -320,3 +320,64 @@ body {
     text-align: left;
     text-shadow: 0 0 2px #672b18;
 }
+/* ---------------------------------- */
+.products {
+}
+.products__container {
+}
+.products__body {
+    margin: 392px 0px 0px 0px;
+}
+.products__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -140px -192px;
+}
+.products__item {
+    flex: 0 1 33%;
+    padding: 0 140px 192px;
+}
+
+.products__imageW {
+    display: flex;
+    justify-content: center;
+}
+.products__image {
+}
+.products__textBlock {
+    display: flex;
+    padding: 33px 25px 0px;
+    justify-content: space-between;
+}
+.products__text1,
+.products__text2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.12em;
+    text-shadow: 0 0 2px #672b18;
+    color: white;
+}
+.products__buttonW {
+    text-align: center;
+}
+.products__button {
+    min-height: 82px;
+    background: #d8a36f;
+    border-radius: 24px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.12em;
+    color: white;
+    padding: 27px 67px;
+    margin-top: 102px;
+    &:hover {
+        background-color: lighten($color: #d8a36f, $amount: 5%);
+    }
+    &:active {
+        background-color: darken($color: #d8a36f, $amount: 5%);
+    }
+}
