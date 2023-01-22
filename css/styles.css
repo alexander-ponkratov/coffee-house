@@ -23,6 +23,8 @@ li {
 
 img {
   vertical-align: top;
+  max-width: 100%;
+  height: auto;
 }
 
 h1,
@@ -297,7 +299,8 @@ body {
 }
 
 .cup__logo {
-  min-height: 429px;
+  /*     min-height: 429px;
+ */
 }
 
 .cup__rect {
@@ -337,12 +340,14 @@ body {
 @media (max-width: 1620px) {
   .products__item {
     flex: 0 1 50%;
+    padding-top: 100px;
   }
 }
 
 @media (max-width: 1000px) {
   .products__item {
     flex: 0 1 100%;
+    padding-top: 50px;
   }
 }
 
