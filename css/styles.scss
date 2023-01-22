@@ -331,11 +331,12 @@ body {
 .products__list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0px -140px -192px;
+    column-gap: 279px;
+    justify-content: center;
 }
 .products__item {
-    flex: 0 1 33%;
-    padding: 0 140px 192px;
+    max-width: 343px;
+    padding-top: 192px;
 }
 @media (max-width:1620px){
     .products__item {
