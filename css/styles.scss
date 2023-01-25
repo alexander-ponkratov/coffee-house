@@ -26,8 +26,8 @@ li {
 
 img {
     vertical-align: top;
-    max-width: 100%;
-    height: auto;
+    /*     max-width: 100%;
+    height: auto; */
 }
 
 h1,
@@ -303,8 +303,23 @@ body {
 .cup__logoW {
 }
 .cup__logo {
-/*     min-height: 429px;
- */}
+    min-height: 429px;
+}
+@media (max-width: 1140px) {
+    .cup__logo {
+        min-height: 250px;
+    }
+}
+@media (max-width: 767px) {
+    .cup__logo {
+        min-height: 130px;
+    }
+}
+@media (max-width: 479px) {
+    .cup__logo {
+        min-height: 50px;
+    }
+}
 .cup__rect {
     max-width: 1206px;
     background: #d8a36f;
@@ -333,23 +348,26 @@ body {
 .products__list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 279px;
-    justify-content: center;
+    margin: 0 -140px;
+}
+.products__column {
+    margin: 0px 0px 192px 0px;
+    padding: 0 140px;
+    flex: 0 1 33.333%
 }
 .products__item {
-    max-width: 343px;
-    padding-top: 192px;
+
 }
-@media (max-width:1620px){
+@media (max-width: 1620px) {
     .products__item {
         flex: 0 1 50%;
-        padding-top: 100px;
+        margin: 0px 0px 100px 0px;
     }
 }
-@media (max-width:1000px){
+@media (max-width: 1000px) {
     .products__item {
         flex: 0 1 100%;
-        padding-top: 50px;
+        margin: 0px 0px 50px 0px;
     }
 }
 
@@ -360,9 +378,11 @@ body {
 .products__image {
 }
 .products__textBlock {
+    max-width: 343px;
     display: flex;
     padding: 33px 0px 0px;
     justify-content: space-between;
+    margin: 0 auto;
 }
 .products__text1,
 .products__text2 {
