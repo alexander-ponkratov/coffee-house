@@ -349,6 +349,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -140px;
+    justify-content: center;
 }
 .products__column {
     margin: 0px 0px 192px 0px;
@@ -358,7 +359,7 @@ body {
 .products__item {
 
 }
-@media (max-width: 1620px) {
+/* @media (max-width: 1620px) {
     .products__item {
         flex: 0 1 50%;
         margin: 0px 0px 100px 0px;
@@ -369,7 +370,7 @@ body {
         flex: 0 1 100%;
         margin: 0px 0px 50px 0px;
     }
-}
+} */
 
 .products__imageW {
     display: flex;
@@ -408,7 +409,6 @@ body {
     letter-spacing: 0.12em;
     color: white;
     padding: 27px 67px;
-    margin-top: 102px;
     &:hover {
         background-color: lighten($color: #d8a36f, $amount: 5%);
     }
