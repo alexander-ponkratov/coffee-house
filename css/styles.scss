@@ -419,11 +419,13 @@ body {
 /* ------------------------------------ */
 
 .otzyvy {
-    margin: 275px 0px 0px 0px;
+
 }
 .otzyvy__container {
 }
 .otzyvy__body {
+    margin: 275px 0px 0px 0px;
+
 }
 .otzyvy__pTextW {
 }
@@ -435,10 +437,16 @@ body {
     letter-spacing: 0.16em;
     /* color: white; */
 }
+
 .otzyvy__group {
     display: flex;
     justify-content: space-between;
-    margin-top: 164px;
+    margin: 164px 0px 0px 0px;
+}
+@media (max-width: 1140px) {
+    .otzyvy__group {
+        margin: 60px 0px 0px 0px;
+    }
 }
 .otzyvy__rows {
     flex: 0 1 auto;
