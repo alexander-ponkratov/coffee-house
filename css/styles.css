@@ -106,10 +106,16 @@ body {
 }
 
 /* ------------------------------------ */
+.header__menuW {
+  width: 100%;
+  max-width: 880px;
+}
+
 .header__menu {
   display: flex;
-  column-gap: 60px;
   flex-wrap: wrap;
+  justify-content: space-between;
+  flex: 1 1 auto;
 }
 
 .menu {
@@ -117,23 +123,8 @@ body {
 }
 
 @media (max-width: 992px) {
-  .header__menu {
-    column-gap: 40px;
-  }
   .menu__link {
     line-height: 100%;
-  }
-}
-
-@media (max-width: 767px) {
-  .header__menu {
-    column-gap: 20px;
-  }
-}
-
-@media (max-width: 479px) {
-  .header__menu {
-    column-gap: 5px;
   }
 }
 
@@ -149,6 +140,11 @@ body {
 
 /* -----------------------------------  */
 /* ----------------------------------- */
+.header__formW {
+  max-width: 351px;
+  flex: 1 1 auto;
+}
+
 .form__inputW {
   position: relative;
   background: rgba(255, 255, 255, 0.15);
@@ -157,7 +153,6 @@ body {
 }
 
 .form__input {
-  width: 351px;
   height: 55px;
   border: none;
   background: url("../img/magnifyingglass.circle.png") no-repeat 95% center;
@@ -345,13 +340,11 @@ body {
 .products__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -140px;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .products__column {
-  margin: 0px 0px 192px 0px;
-  padding: 0 140px;
+  margin: 0px auto 192px;
   flex: 0 1 33.333%;
 }
 
