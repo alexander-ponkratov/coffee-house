@@ -106,26 +106,24 @@ body {
 }
 
 /* ------------------------------------ */
-.header__menuW {
-  width: 100%;
-  max-width: 880px;
-}
-
 .header__menu {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  flex: 1 1 auto;
+  margin: 0 -30px;
 }
 
 .menu {
-  padding: 5px 0;
+  padding: 5px 5px;
 }
 
 @media (max-width: 992px) {
   .menu__link {
-    line-height: 100%;
+    line-height: 150%;
   }
+}
+
+.menu__item {
+  padding: 0 30px;
 }
 
 .menu__link {
