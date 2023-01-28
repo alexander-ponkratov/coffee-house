@@ -420,7 +420,7 @@ body {
     font-size: 48px;
     line-height: 59px;
     letter-spacing: 0.16em;
-    /* color: white; */
+     color: white;
 }
 
 .otzyvy__group {
@@ -466,6 +466,7 @@ body {
     line-height: 20px;
     letter-spacing: 0.14em;
     margin: 0px 0px 0px 25px;
+    color: white;
 }
 @media (max-width: 1140px) {
     .otzyvy__rowText {
@@ -484,4 +485,21 @@ body {
     .otzyvy__stars {
         max-width: 150px;
     }
+}
+/* --------------------------------- */
+.bottomW {
+    position: relative;
+    width: 100%;
+    min-height: 2322px;
+    margin-top: -2030px;
+}
+.bottom__imageW {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.bottom__image {
 }
