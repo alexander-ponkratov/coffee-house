@@ -148,6 +148,7 @@ body {
     z-index: 10;
 }
 .form__input {
+    width: 100%;
     height: 55px;
     border: none;
     background: url("../img/magnifyingglass.circle.png") no-repeat 95% center;
@@ -366,7 +367,7 @@ body {
 
 .products__imageW {
     position: relative;
-    padding: 0px 0px 100% 0px;    
+    padding: 0px 0px 100% 0px;
     overflow: hidden;
 }
 .products__image {
@@ -432,7 +433,7 @@ body {
     font-size: 48px;
     line-height: 59px;
     letter-spacing: 0.16em;
-     color: white;
+    color: white;
 }
 
 .otzyvy__group {
@@ -514,4 +515,63 @@ body {
     z-index: -1;
 }
 .bottom__image {
+}
+
+/* --------------------------------- */
+
+.footer {
+    margin-top: -220px;
+    width: 100%;
+    z-index: 50;
+    background: rgba(16, 24, 30, 0.4);
+}
+.footer__container {
+}
+
+.footer__body {
+    display: flex;
+    align-items: center;
+}
+.footer__menuW {
+}
+.footer__menu {
+    margin: -7px 0;
+}
+.footer__menuItem {
+    padding: 7px 0;
+
+}
+.footer__menuLink {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.14em;
+    color: #ffffff;
+}
+.footer_iconsGroup {
+}
+.iconsGroup {
+}
+.iconsGroup__cupW {
+}
+.iconsGroup__cup {
+}
+.iconsGroup__icons {
+}
+.icons {
+}
+.icons_linkW {
+}
+.icons_link {
+}
+.icons__linkImg {
+}
+.footer__contactsW {
+}
+.footer__contacts {
+}
+.contacts {
+}
+.contacts__item {
+}
+.contacts__link {
 }

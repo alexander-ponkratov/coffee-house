@@ -148,6 +148,7 @@ body {
 }
 
 .form__input {
+  width: 100%;
   height: 55px;
   border: none;
   background: url("../img/magnifyingglass.circle.png") no-repeat 95% center;
@@ -518,5 +519,33 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+/* --------------------------------- */
+.footer {
+  margin-top: -220px;
+  width: 100%;
+  z-index: 50;
+  background: rgba(16, 24, 30, 0.4);
+}
+
+.footer__body {
+  display: flex;
+  align-items: center;
+}
+
+.footer__menu {
+  margin: -7px 0;
+}
+
+.footer__menuItem {
+  padding: 7px 0;
+}
+
+.footer__menuLink {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.14em;
+  color: #ffffff;
 }
 /*# sourceMappingURL=styles.css.map */
