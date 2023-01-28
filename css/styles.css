@@ -61,11 +61,6 @@ body {
   box-sizing: content-box;
 }
 
-._row {
-  display: flex;
-  align-items: center;
-}
-
 ._ibg {
   position: relative;
 }
@@ -101,6 +96,8 @@ body {
 }
 
 .header__row {
+  display: flex;
+  align-items: center;
   min-height: 183px;
   justify-content: space-between;
 }
@@ -109,7 +106,7 @@ body {
 .header__menu {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -30px;
+  margin: 0 -35px;
 }
 
 .menu {
@@ -123,7 +120,7 @@ body {
 }
 
 .menu__item {
-  padding: 0 30px;
+  padding: 0 35px;
 }
 
 .menu__link {
@@ -287,12 +284,12 @@ body {
 .about__cup {
   display: flex;
   align-items: center;
-  justify-content: center;
-  column-gap: 113px;
+  justify-content: space-between;
 }
 
 .cup__logo {
   min-height: 429px;
+  padding: 0px 5px 0px 60px;
 }
 
 @media (max-width: 1140px) {
