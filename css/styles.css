@@ -529,9 +529,17 @@ body {
   background: rgba(16, 24, 30, 0.4);
 }
 
+.footer__container {
+  max-width: 1500px;
+}
+
 .footer__body {
   display: flex;
   align-items: center;
+}
+
+.footer__menuW {
+  flex: 0 1 33.333%;
 }
 
 .footer__menu {
@@ -543,6 +551,40 @@ body {
 }
 
 .footer__menuLink {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.14em;
+  color: #ffffff;
+}
+
+.footer_iconsGroup {
+  flex: 0 1 33.333%;
+}
+
+.iconsGroup__icons {
+  display: flex;
+  flex-direction: row;
+  margin: 0 -6px;
+  margin: 11px 0px 0px 0px;
+}
+
+.icons_linkW {
+  padding: 0 6px;
+}
+
+.footer__contactsW {
+  flex: 0 1 33.333%;
+}
+
+.contacts {
+  margin: -16px 0;
+}
+
+.contacts__item {
+  padding: 16px 0;
+}
+
+.contacts__link {
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.14em;
